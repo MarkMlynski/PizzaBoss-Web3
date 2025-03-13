@@ -1,0 +1,208 @@
+/* Cyberpunk / Neon Color Palette */
+:root {
+  --neon-pink: #ff00cc;
+  --neon-cyan: #00ffff;
+  --neon-purple: #ad00ff;
+  --dark-bg: #0d0d0d;
+  --accent-bg: #1a1a1a;
+  --text-color: #ffffff;
+  --highlight-color: #ff9900;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Verdana', sans-serif;
+}
+
+body {
+  background: var(--dark-bg);
+  color: var(--text-color);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent-bg);
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.8rem;
+  color: var(--neon-pink);
+  font-weight: bold;
+  text-shadow: 0 0 8px var(--neon-pink);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: var(--neon-pink);
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("assets/YOUR_SKYLINE_IMAGE.jpg") center/cover no-repeat;
+  /* Replace YOUR_SKYLINE_IMAGE.jpg with your actual Chicago skyline image */
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(10, 10, 30, 0.8));
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.hero-logo {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.neon-text {
+  font-size: 4rem;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--highlight-color);
+}
+.chicago-note {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--neon-pink);
+}
+
+/* Button Styles */
+.btn-glow, .btn-neon, .btn-neon-alt {
+  background: none;
+  border: 2px solid;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0.2rem;
+}
+.btn-glow {
+  border-color: var(--neon-pink);
+  color: var(--neon-pink);
+}
+.btn-glow:hover {
+  box-shadow: 0 0 8px var(--neon-pink);
+}
+.btn-neon {
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+}
+.btn-neon:hover {
+  box-shadow: 0 0 8px var(--neon-cyan);
+}
+.btn-neon-alt {
+  border-color: var(--neon-purple);
+  color: var(--neon-purple);
+}
+.btn-neon-alt:hover {
+  box-shadow: 0 0 8px var(--neon-purple);
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* About Section */
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--neon-pink);
+  text-shadow: 0 0 6px var(--neon-pink);
+}
+.about-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Mint Section */
+.mint-section {
+  background: var(--accent-bg);
+  border-top: 1px solid var(--neon-pink);
+  border-bottom: 1px solid var(--neon-pink);
+}
+.mint-section h2 {
+  font-size: 2rem;
+  color: var(--neon-cyan);
+  margin-bottom: 0.5rem;
+}
+.status {
+  margin-top: 1rem;
+  color: var(--highlight-color);
+}
+
+/* Crypto Section */
+.crypto-section {
+  background: #111;
+}
+.crypto-section h2 {
+  color: var(--neon-purple);
+  text-shadow: 0 0 5px var(--neon-purple);
+}
+.crypto-section p {
+  max-width: 600px;
+  margin: 0.5rem auto 2rem;
+  font-size: 1.1rem;
+}
+
+/* Community Section */
+.community-section {
+  background: var(--accent-bg);
+  color: var(--text-color);
+}
+.community-section h2 {
+  color: var(--neon-pink);
+  margin-bottom: 0.5rem;
+}
+.community-section a.btn-glow {
+  text-decoration: none;
+  color: var(--neon-pink);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: var(--neon-cyan);
+  text-align: center;
+  padding: 1rem;
+}
+.footer-neon {
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px var(--neon-pink);
+}
