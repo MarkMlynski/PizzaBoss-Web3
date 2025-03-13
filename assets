@@ -1,4 +1,4 @@
-git add assets/
+git add assets/PizzaBoss.png
 git commit -m "PizzaBoss.png"
 git push
-PizzaBoss.png
+
