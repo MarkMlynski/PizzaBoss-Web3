@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PizzaBoss-Web3</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Boss Web3 - Chicago Style Meets Blockchain</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Ethers.js for Web3 connectivity -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <!-- Coinbase Commerce for crypto payments -->
+  <script src="https://commerce.coinbase.com/v1/checkout.js"></script>
 </head>
 <body>
-    <h1>Welcome to PizzaBoss-Web3!</h1>
+  <header>
+    <nav class="navbar">
+      <div class="logo">PIZZA BOSS</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#mint">Mint NFT</a></li>
+        <li><a href="#crypto">Pay with Crypto</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Skyline Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="assets/PizzaBoss.png" alt="Pizza Boss Logo" class="hero-logo">
+      <h1 class="neon-text">PIZZA BOSS</h1>
+      <p class="subtitle">We’re thinking outside the pizza box!</p>
+      <p class="chicago-note">Chicago Born • Blockchain Raised</p>
+      <button id="connectWalletBtn" class="btn-glow">Connect Wallet</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>Cyberpunk Chicago Meets Blockchain Ingenuity</h2>
+    <p>
+      Inspired by the neon-lit skyline of the Windy City – featuring iconic structures like the Sears Tower, John Hancock, and the Prudential Building – we fuse deep-dish tradition with cutting-edge Web3 technology. Join us as we revolutionize pizza culture with blockchain integration!
+    </p>
+  </section>
+
+  <!-- NFT Mint Section -->
+  <section id="mint" class="mint-section">
+    <h2>Mint Your Pizza Boss NFT</h2>
+    <p>Own a slice of the future—stake your claim in our exclusive NFT membership program.</p>
+    <button id="mintNFTBtn" class="btn-neon">Mint NFT Membership</button>
+    <div id="mintStatus" class="status"></div>
+  </section>
+
+  <!-- Crypto Payment Section -->
+  <section id="crypto" class="crypto-section">
+    <h2>Pay with Crypto</h2>
+    <p>Already hungry? Settle your bill using BTC, ETH, or your favorite altcoins. We accept them all!</p>
+    <button id="payCryptoBtn" class="btn-neon-alt">Pay with Crypto</button>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="community-section">
+    <h2>Join the Pizza Boss Community</h2>
+    <p>
+      Connect with us on Telegram, verify your NFT, and become part of a vibrant community of pizza lovers, crypto enthusiasts, and Chicago fans!
+    </p>
+    <a href="https://t.me/yourTelegramGroupLink" class="btn-glow" target="_blank">Join Telegram</a>
+  </section>
+
+  <footer>
+    <p>© 2023 Pizza Boss • Chicago Skyline, Blockchain-Ready • <span class="footer-neon">Slicing the Future</span></p>
+  </footer>
+
+  <!-- JavaScript for wallet connection, NFT minting, and crypto payments -->
+  <script src="script.js"></script>
 </body>
 </html>
+
