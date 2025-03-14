@@ -134,14 +134,14 @@ body {
 
 /* Section Styling */
 section {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
 /* About Section */
 .about-section h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   color: var(--neon-pink);
   text-shadow: 0 0 6px var(--neon-pink);
 }
@@ -163,7 +163,7 @@ section {
   margin-bottom: 0.5rem;
 }
 .status {
-  margin-top: 1rem;
+  margin-top: .5rem;
   color: var(--highlight-color);
 }
 
